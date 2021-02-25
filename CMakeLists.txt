@@ -12,7 +12,7 @@ include_directories(${OpenGL_INCLUDE_DIRS} ${glfw3_INCLUDE_DIRS})
 
 #Sources and includes
 file(GLOB_RECURSE sources "src/*.*" "lib/glad/src/glad.c")
-include_directories("lib/glad/include")
+include_directories("lib/glad/include", "include")
 
 
 add_executable(learn-opengl ${sources})
